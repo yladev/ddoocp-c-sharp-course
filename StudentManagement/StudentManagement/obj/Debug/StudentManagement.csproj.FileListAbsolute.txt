@@ -1,0 +1,6 @@
+D:\DDOOCP\StudentManagement\StudentManagement\bin\Debug\StudentManagement.exe.config
+D:\DDOOCP\StudentManagement\StudentManagement\bin\Debug\StudentManagement.exe
+D:\DDOOCP\StudentManagement\StudentManagement\bin\Debug\StudentManagement.pdb
+D:\DDOOCP\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csprojResolveAssemblyReference.cache
+D:\DDOOCP\StudentManagement\StudentManagement\obj\Debug\StudentManagement.exe
+D:\DDOOCP\StudentManagement\StudentManagement\obj\Debug\StudentManagement.pdb
