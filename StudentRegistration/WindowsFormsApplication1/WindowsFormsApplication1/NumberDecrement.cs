@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class NumberIncrement : Form
+    public partial class NumberDecrement : Form
     {
-        public NumberIncrement()
+        public NumberDecrement()
         {
             InitializeComponent();
         }
 
-        private void btnDis_Click(object sender, EventArgs e)
+        private void btnDSL_Click(object sender, EventArgs e)
         {
-            for (int i = 10; i <= 30; i = i+5)
+            for (int i = 20; i >= 12; i = i-2)
             {
-                lblDis.Text += i + "\n";
+                lblDSL.Text += i + "\n";
             }
         }
     }

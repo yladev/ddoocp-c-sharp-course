@@ -56,6 +56,12 @@
     <Compile Include="MultiplicationTableOfThree.Designer.cs">
       <DependentUpon>MultiplicationTableOfThree.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumberDecrement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberDecrement.Designer.cs">
+      <DependentUpon>NumberDecrement.cs</DependentUpon>
+    </Compile>
     <Compile Include="NumberIncrement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MultiplicationTableOfThree.resx">
       <DependentUpon>MultiplicationTableOfThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberDecrement.resx">
+      <DependentUpon>NumberDecrement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NumberIncrement.resx">
       <DependentUpon>NumberIncrement.cs</DependentUpon>

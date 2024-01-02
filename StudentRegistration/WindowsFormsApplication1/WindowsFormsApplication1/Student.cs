@@ -19,24 +19,10 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /* for (int i = 1; i <= 3; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 lblDisplay.Text += i + "\n";
             } 
-            */
-             
-            for (int i = 10; i <= 30; i=i+5)
-            {
-                lblDisplay.Text += i + "\n";
-            }
-           
-
-            /*
-            for (int i = 20; i >= 12; i=i-2)
-            {
-                lblDisplay.Text += i + "\n";
-            }
-            */
         }
     }
 }
