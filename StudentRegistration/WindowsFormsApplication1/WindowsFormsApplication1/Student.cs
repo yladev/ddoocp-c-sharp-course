@@ -24,14 +24,6 @@ namespace WindowsFormsApplication1
                 lblDisplay.Text += i + "\n";
             } 
             */
-
-            /*
-            for (int i = 1; i <= 5; i++)
-            {
-                lblDisplay.Text += "3 * " + i + " = " + (3 * i) + "\n";
-            }
-            */
-
              
             for (int i = 10; i <= 30; i=i+5)
             {

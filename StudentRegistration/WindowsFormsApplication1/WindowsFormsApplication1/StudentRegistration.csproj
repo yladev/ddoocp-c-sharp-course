@@ -50,6 +50,12 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="MultiplicationTableOfThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiplicationTableOfThree.Designer.cs">
+      <DependentUpon>MultiplicationTableOfThree.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs">
@@ -60,6 +66,9 @@
     </Compile>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiplicationTableOfThree.resx">
+      <DependentUpon>MultiplicationTableOfThree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
