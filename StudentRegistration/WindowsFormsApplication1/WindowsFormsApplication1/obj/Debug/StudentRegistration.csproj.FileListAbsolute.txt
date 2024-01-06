@@ -11,3 +11,4 @@ D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\
 D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.NumberIncrement.resources
 D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.NumberDecrement.resources
 D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmStudent.resources
+D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Lecturer.resources
