@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Lecturer
+    partial class frmLecturer
     {
         /// <summary>
         /// Required designer variable.
@@ -28,68 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.grbLecturerInformation = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.txtLecturerName = new System.Windows.Forms.TextBox();
+            this.txtLecturerID = new System.Windows.Forms.TextBox();
+            this.txtQualification = new System.Windows.Forms.TextBox();
+            this.cbxPosition = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.grbGender = new System.Windows.Forms.GroupBox();
+            this.rdoMale = new System.Windows.Forms.RadioButton();
+            this.rdoFemale = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEmailAddress = new System.Windows.Forms.TextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.grbEditLecturer = new System.Windows.Forms.GroupBox();
+            this.lblLD = new System.Windows.Forms.Label();
+            this.txtLD = new System.Windows.Forms.TextBox();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.grbLecturerInformation.SuspendLayout();
+            this.grbGender.SuspendLayout();
+            this.grbEditLecturer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grbLecturerInformation
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(758, 671);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Lecturer Information";
+            this.grbLecturerInformation.Controls.Add(this.txtPhoneNumber);
+            this.grbLecturerInformation.Controls.Add(this.txtEmailAddress);
+            this.grbLecturerInformation.Controls.Add(this.label6);
+            this.grbLecturerInformation.Controls.Add(this.label4);
+            this.grbLecturerInformation.Controls.Add(this.grbGender);
+            this.grbLecturerInformation.Controls.Add(this.btnCancel);
+            this.grbLecturerInformation.Controls.Add(this.btnUpdate);
+            this.grbLecturerInformation.Controls.Add(this.btnSave);
+            this.grbLecturerInformation.Controls.Add(this.txtLecturerName);
+            this.grbLecturerInformation.Controls.Add(this.txtLecturerID);
+            this.grbLecturerInformation.Controls.Add(this.txtQualification);
+            this.grbLecturerInformation.Controls.Add(this.cbxPosition);
+            this.grbLecturerInformation.Controls.Add(this.label5);
+            this.grbLecturerInformation.Controls.Add(this.label3);
+            this.grbLecturerInformation.Controls.Add(this.label2);
+            this.grbLecturerInformation.Controls.Add(this.label1);
+            this.grbLecturerInformation.Location = new System.Drawing.Point(12, 12);
+            this.grbLecturerInformation.Name = "grbLecturerInformation";
+            this.grbLecturerInformation.Size = new System.Drawing.Size(523, 565);
+            this.grbLecturerInformation.TabIndex = 0;
+            this.grbLecturerInformation.TabStop = false;
+            this.grbLecturerInformation.Text = "Lecturer Information";
             // 
-            // comboBox1
+            // btnCancel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.btnCancel.Location = new System.Drawing.Point(315, 464);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(86, 58);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(164, 464);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(86, 58);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(18, 464);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(86, 58);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // txtLecturerName
+            // 
+            this.txtLecturerName.Location = new System.Drawing.Point(256, 76);
+            this.txtLecturerName.Name = "txtLecturerName";
+            this.txtLecturerName.Size = new System.Drawing.Size(145, 22);
+            this.txtLecturerName.TabIndex = 9;
+            // 
+            // txtLecturerID
+            // 
+            this.txtLecturerID.Location = new System.Drawing.Point(256, 31);
+            this.txtLecturerID.Name = "txtLecturerID";
+            this.txtLecturerID.Size = new System.Drawing.Size(145, 22);
+            this.txtLecturerID.TabIndex = 8;
+            // 
+            // txtQualification
+            // 
+            this.txtQualification.Location = new System.Drawing.Point(256, 127);
+            this.txtQualification.Name = "txtQualification";
+            this.txtQualification.Size = new System.Drawing.Size(145, 22);
+            this.txtQualification.TabIndex = 7;
+            // 
+            // cbxPosition
+            // 
+            this.cbxPosition.FormattingEnabled = true;
+            this.cbxPosition.Items.AddRange(new object[] {
             "Principle",
             "Training Manager",
             "Senior Lecturer",
             "Junior Lecturer",
             "Instructor"});
-            this.comboBox1.Location = new System.Drawing.Point(253, 174);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 5;
+            this.cbxPosition.Location = new System.Drawing.Point(256, 178);
+            this.cbxPosition.Name = "cbxPosition";
+            this.cbxPosition.Size = new System.Drawing.Size(145, 24);
+            this.cbxPosition.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 40);
+            this.label5.Location = new System.Drawing.Point(15, 36);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Lecturer ID";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 230);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Gender";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 177);
+            this.label3.Location = new System.Drawing.Point(15, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 17);
             this.label3.TabIndex = 2;
@@ -98,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 129);
+            this.label2.Location = new System.Drawing.Point(15, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 17);
             this.label2.TabIndex = 1;
@@ -113,29 +179,152 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Lecturer Name";
             // 
-            // Lecturer
+            // grbGender
+            // 
+            this.grbGender.Controls.Add(this.rdoFemale);
+            this.grbGender.Controls.Add(this.rdoMale);
+            this.grbGender.Location = new System.Drawing.Point(18, 232);
+            this.grbGender.Name = "grbGender";
+            this.grbGender.Size = new System.Drawing.Size(397, 54);
+            this.grbGender.TabIndex = 13;
+            this.grbGender.TabStop = false;
+            this.grbGender.Text = "Gender";
+            // 
+            // rdoMale
+            // 
+            this.rdoMale.AutoSize = true;
+            this.rdoMale.Location = new System.Drawing.Point(238, 21);
+            this.rdoMale.Name = "rdoMale";
+            this.rdoMale.Size = new System.Drawing.Size(59, 21);
+            this.rdoMale.TabIndex = 14;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "Male";
+            this.rdoMale.UseVisualStyleBackColor = true;
+            // 
+            // rdoFemale
+            // 
+            this.rdoFemale.AutoSize = true;
+            this.rdoFemale.Location = new System.Drawing.Point(308, 21);
+            this.rdoFemale.Name = "rdoFemale";
+            this.rdoFemale.Size = new System.Drawing.Size(75, 21);
+            this.rdoFemale.TabIndex = 14;
+            this.rdoFemale.TabStop = true;
+            this.rdoFemale.Text = "Female";
+            this.rdoFemale.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 326);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 17);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Email Address";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 385);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Phone Number";
+            // 
+            // txtEmailAddress
+            // 
+            this.txtEmailAddress.Location = new System.Drawing.Point(256, 326);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Size = new System.Drawing.Size(145, 22);
+            this.txtEmailAddress.TabIndex = 16;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(256, 385);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(145, 22);
+            this.txtPhoneNumber.TabIndex = 17;
+            // 
+            // grbEditLecturer
+            // 
+            this.grbEditLecturer.Controls.Add(this.lblLD);
+            this.grbEditLecturer.Controls.Add(this.txtLD);
+            this.grbEditLecturer.Controls.Add(this.btnEdit);
+            this.grbEditLecturer.Location = new System.Drawing.Point(595, 338);
+            this.grbEditLecturer.Name = "grbEditLecturer";
+            this.grbEditLecturer.Size = new System.Drawing.Size(523, 239);
+            this.grbEditLecturer.TabIndex = 1;
+            this.grbEditLecturer.TabStop = false;
+            this.grbEditLecturer.Text = "Edit Lecturer";
+            // 
+            // lblLD
+            // 
+            this.lblLD.AutoSize = true;
+            this.lblLD.Location = new System.Drawing.Point(19, 59);
+            this.lblLD.Name = "lblLD";
+            this.lblLD.Size = new System.Drawing.Size(78, 17);
+            this.lblLD.TabIndex = 2;
+            this.lblLD.Text = "Lecturer ID";
+            // 
+            // txtLD
+            // 
+            this.txtLD.Location = new System.Drawing.Point(260, 59);
+            this.txtLD.Name = "txtLD";
+            this.txtLD.Size = new System.Drawing.Size(145, 22);
+            this.txtLD.TabIndex = 3;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(260, 138);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(86, 58);
+            this.btnEdit.TabIndex = 4;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            // 
+            // frmLecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 708);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Lecturer";
+            this.ClientSize = new System.Drawing.Size(1226, 622);
+            this.Controls.Add(this.grbEditLecturer);
+            this.Controls.Add(this.grbLecturerInformation);
+            this.Name = "frmLecturer";
             this.Text = "Lecturer";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.grbLecturerInformation.ResumeLayout(false);
+            this.grbLecturerInformation.PerformLayout();
+            this.grbGender.ResumeLayout(false);
+            this.grbGender.PerformLayout();
+            this.grbEditLecturer.ResumeLayout(false);
+            this.grbEditLecturer.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbLecturerInformation;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxPosition;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txtLecturerName;
+        private System.Windows.Forms.TextBox txtLecturerID;
+        private System.Windows.Forms.TextBox txtQualification;
+        private System.Windows.Forms.GroupBox grbGender;
+        private System.Windows.Forms.RadioButton rdoFemale;
+        private System.Windows.Forms.RadioButton rdoMale;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.TextBox txtEmailAddress;
+        private System.Windows.Forms.GroupBox grbEditLecturer;
+        private System.Windows.Forms.Label lblLD;
+        private System.Windows.Forms.TextBox txtLD;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
