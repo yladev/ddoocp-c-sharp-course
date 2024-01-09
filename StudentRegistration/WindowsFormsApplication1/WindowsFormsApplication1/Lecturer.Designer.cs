@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.grbLecturerInformation = new System.Windows.Forms.GroupBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtEmailAddress = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.grbGender = new System.Windows.Forms.GroupBox();
+            this.rdoFemale = new System.Windows.Forms.RadioButton();
+            this.rdoMale = new System.Windows.Forms.RadioButton();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -40,13 +47,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.grbGender = new System.Windows.Forms.GroupBox();
-            this.rdoMale = new System.Windows.Forms.RadioButton();
-            this.rdoFemale = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtEmailAddress = new System.Windows.Forms.TextBox();
-            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.grbEditLecturer = new System.Windows.Forms.GroupBox();
             this.lblLD = new System.Windows.Forms.Label();
             this.txtLD = new System.Windows.Forms.TextBox();
@@ -81,6 +81,71 @@
             this.grbLecturerInformation.TabStop = false;
             this.grbLecturerInformation.Text = "Lecturer Information";
             // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(256, 385);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(145, 22);
+            this.txtPhoneNumber.TabIndex = 17;
+            // 
+            // txtEmailAddress
+            // 
+            this.txtEmailAddress.Location = new System.Drawing.Point(256, 326);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Size = new System.Drawing.Size(145, 22);
+            this.txtEmailAddress.TabIndex = 16;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 385);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Phone Number";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 326);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 17);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Email Address";
+            // 
+            // grbGender
+            // 
+            this.grbGender.Controls.Add(this.rdoFemale);
+            this.grbGender.Controls.Add(this.rdoMale);
+            this.grbGender.Location = new System.Drawing.Point(18, 232);
+            this.grbGender.Name = "grbGender";
+            this.grbGender.Size = new System.Drawing.Size(397, 54);
+            this.grbGender.TabIndex = 13;
+            this.grbGender.TabStop = false;
+            this.grbGender.Text = "Gender";
+            // 
+            // rdoFemale
+            // 
+            this.rdoFemale.AutoSize = true;
+            this.rdoFemale.Location = new System.Drawing.Point(308, 21);
+            this.rdoFemale.Name = "rdoFemale";
+            this.rdoFemale.Size = new System.Drawing.Size(75, 21);
+            this.rdoFemale.TabIndex = 14;
+            this.rdoFemale.TabStop = true;
+            this.rdoFemale.Text = "Female";
+            this.rdoFemale.UseVisualStyleBackColor = true;
+            // 
+            // rdoMale
+            // 
+            this.rdoMale.AutoSize = true;
+            this.rdoMale.Location = new System.Drawing.Point(238, 21);
+            this.rdoMale.Name = "rdoMale";
+            this.rdoMale.Size = new System.Drawing.Size(59, 21);
+            this.rdoMale.TabIndex = 14;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "Male";
+            this.rdoMale.UseVisualStyleBackColor = true;
+            // 
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(315, 464);
@@ -107,6 +172,7 @@
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtLecturerName
             // 
@@ -178,71 +244,6 @@
             this.label1.Size = new System.Drawing.Size(102, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lecturer Name";
-            // 
-            // grbGender
-            // 
-            this.grbGender.Controls.Add(this.rdoFemale);
-            this.grbGender.Controls.Add(this.rdoMale);
-            this.grbGender.Location = new System.Drawing.Point(18, 232);
-            this.grbGender.Name = "grbGender";
-            this.grbGender.Size = new System.Drawing.Size(397, 54);
-            this.grbGender.TabIndex = 13;
-            this.grbGender.TabStop = false;
-            this.grbGender.Text = "Gender";
-            // 
-            // rdoMale
-            // 
-            this.rdoMale.AutoSize = true;
-            this.rdoMale.Location = new System.Drawing.Point(238, 21);
-            this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(59, 21);
-            this.rdoMale.TabIndex = 14;
-            this.rdoMale.TabStop = true;
-            this.rdoMale.Text = "Male";
-            this.rdoMale.UseVisualStyleBackColor = true;
-            // 
-            // rdoFemale
-            // 
-            this.rdoFemale.AutoSize = true;
-            this.rdoFemale.Location = new System.Drawing.Point(308, 21);
-            this.rdoFemale.Name = "rdoFemale";
-            this.rdoFemale.Size = new System.Drawing.Size(75, 21);
-            this.rdoFemale.TabIndex = 14;
-            this.rdoFemale.TabStop = true;
-            this.rdoFemale.Text = "Female";
-            this.rdoFemale.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 326);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 17);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Email Address";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 385);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 17);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Phone Number";
-            // 
-            // txtEmailAddress
-            // 
-            this.txtEmailAddress.Location = new System.Drawing.Point(256, 326);
-            this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(145, 22);
-            this.txtEmailAddress.TabIndex = 16;
-            // 
-            // txtPhoneNumber
-            // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(256, 385);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(145, 22);
-            this.txtPhoneNumber.TabIndex = 17;
             // 
             // grbEditLecturer
             // 

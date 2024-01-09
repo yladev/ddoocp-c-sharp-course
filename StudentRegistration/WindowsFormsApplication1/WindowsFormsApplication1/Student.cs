@@ -40,5 +40,55 @@ namespace WindowsFormsApplication1
             txtPhoneNumber.Text = "";
             txtAddress.Text = "";
         }
+
+        private void frmStudent_Load(object sender, EventArgs e)
+        {
+            txtStudentID.Select();
+            this.ActiveControl = txtStudentID;
+            txtStudentID.Focus();
+
+            /* txtStudentName.Select();
+            this.ActiveControl = txtStudentName;
+            txtStudentName.Focus(); */
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (txtStudentID.Text == "")
+            {
+                MessageBox.Show("Please enter StudentID: ");
+                txtStudentID.Focus();
+            }
+            else if (txtStudentName.Text == "")
+            {
+                MessageBox.Show("Please enter your StudentName: ");
+                txtStudentName.Focus();
+            }
+            else if (txtNRC.Text == "")
+            {
+                MessageBox.Show("Please enter your NRC Number: ");
+                txtNRC.Focus();
+            }
+            else if (txtQuali.Text == "")
+            {
+                MessageBox.Show("Please enter your Qualifaction: ");
+                txtQuali.Focus();
+            }
+            else if (txtEmailAddress.Text == "")
+            {
+                MessageBox.Show("Please enter your EmailAddress: ");
+                txtEmailAddress.Focus();
+            }
+            else if (txtPhoneNumber.Text == "")
+            {
+                MessageBox.Show("Please enter your PhoneNumber: ");
+                txtPhoneNumber.Focus();
+            }
+            else if (txtAddress.Text == "")
+            {
+                MessageBox.Show("Please enter your Address: ");
+                txtAddress.Focus();
+            }
+        }
     }
 }
