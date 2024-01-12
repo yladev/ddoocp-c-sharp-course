@@ -21,9 +21,38 @@ namespace WindowsFormsApplication1
         {
             if (txtLecturerID.Text == "")
             {
-                MessageBox.Show("Please enter your LecturerID: ");
+                MessageBox.Show("Please enter your LecturerID: ", "Lecturer Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtLecturerID.Focus();
             }
+            else if (txtLecturerName.Text == "")
+            {
+                MessageBox.Show("Please enter your LecturerName: ", "Lecturer Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                txtLecturerName.Focus();
+            }
+            else if (txtQualification.Text == "")
+            {
+                MessageBox.Show("Please enter your txtQualification: ", "Lecturer Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                txtQualification.Focus();
+            }
+            else if (txtEmailAddress.Text == "")
+            {
+                MessageBox.Show("Please enter your EmailAddress: ", "Lecturer Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                txtEmailAddress.Focus();
+            }
+            else if (txtPhoneNumber.Text == "")
+            {
+                MessageBox.Show("Please enter your PhoneNumber: ", "Lecturer Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                txtPhoneNumber.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Lecturer Form Save Successful", "Lecturer Form", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

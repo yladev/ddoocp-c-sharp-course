@@ -39,6 +39,7 @@ namespace WindowsFormsApplication1
             txtEmailAddress.Text = "";
             txtPhoneNumber.Text = "";
             txtAddress.Text = "";
+            txtStudentID.Focus();
         }
 
         private void frmStudent_Load(object sender, EventArgs e)
@@ -54,41 +55,53 @@ namespace WindowsFormsApplication1
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (txtStudentID.Text == "")
+             if (txtStudentID.Text == "")
             {
-                MessageBox.Show("Please enter StudentID: ");
+                MessageBox.Show("Please enter StudentID: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtStudentID.Focus();
             }
             else if (txtStudentName.Text == "")
             {
-                MessageBox.Show("Please enter your StudentName: ");
+                MessageBox.Show("Please enter your StudentName: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtStudentName.Focus();
             }
             else if (txtNRC.Text == "")
             {
-                MessageBox.Show("Please enter your NRC Number: ");
+                MessageBox.Show("Please enter your NRC Number: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtNRC.Focus();
             }
             else if (txtQuali.Text == "")
             {
-                MessageBox.Show("Please enter your Qualifaction: ");
+                MessageBox.Show("Please enter your Qualifaction: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtQuali.Focus();
             }
             else if (txtEmailAddress.Text == "")
             {
-                MessageBox.Show("Please enter your EmailAddress: ");
+                MessageBox.Show("Please enter your EmailAddress: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtEmailAddress.Focus();
             }
             else if (txtPhoneNumber.Text == "")
             {
-                MessageBox.Show("Please enter your PhoneNumber: ");
+                MessageBox.Show("Please enter your PhoneNumber: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtPhoneNumber.Focus();
             }
-            else if (txtAddress.Text == "")
-            {
-                MessageBox.Show("Please enter your Address: ");
-                txtAddress.Focus();
-            }
+             else if (txtAddress.Text == "")
+             {
+                 MessageBox.Show("Please enter your Address: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                 txtAddress.Focus();
+             }
+             else
+             {
+                 MessageBox.Show("Student Save Successful", "Student Form", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                 txtStudentID.Text = "";
+                 txtStudentName.Text = "";
+                 txtNRC.Text = "";
+                 txtQuali.Text = "";
+                 txtEmailAddress.Text = "";
+                 txtPhoneNumber.Text = "";
+                 txtAddress.Text = "";
+                 txtStudentID.Focus();
+             }
         }
     }
 }
