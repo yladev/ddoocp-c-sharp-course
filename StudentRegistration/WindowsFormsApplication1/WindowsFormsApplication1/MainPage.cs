@@ -16,5 +16,22 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void mnuStudent_Click(object sender, EventArgs e)
+        {
+            frmStudent s = new frmStudent();
+            s.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void mnuLecturer_Click(object sender, EventArgs e)
+        {
+            frmLecturer l = new frmLecturer();
+            l.Show();
+        }
     }
 }

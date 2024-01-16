@@ -36,7 +36,8 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuLecturer = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,9 +45,9 @@
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 22);
+            this.label1.Location = new System.Drawing.Point(178, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 30);
+            this.label1.Size = new System.Drawing.Size(304, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student Registration System";
             // 
@@ -88,12 +89,14 @@
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // entryToolStripMenuItem
             // 
             this.entryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuStudent,
-            this.exitToolStripMenuItem1});
+            this.mnuLecturer,
+            this.mnuCourse});
             this.entryToolStripMenuItem.Name = "entryToolStripMenuItem";
             this.entryToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
             this.entryToolStripMenuItem.Text = "&Entry";
@@ -103,12 +106,20 @@
             this.mnuStudent.Name = "mnuStudent";
             this.mnuStudent.Size = new System.Drawing.Size(152, 24);
             this.mnuStudent.Text = "&Student";
+            this.mnuStudent.Click += new System.EventHandler(this.mnuStudent_Click);
             // 
-            // exitToolStripMenuItem1
+            // mnuLecturer
             // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
-            this.exitToolStripMenuItem1.Text = "&Exit";
+            this.mnuLecturer.Name = "mnuLecturer";
+            this.mnuLecturer.Size = new System.Drawing.Size(152, 24);
+            this.mnuLecturer.Text = "&Lecturer";
+            this.mnuLecturer.Click += new System.EventHandler(this.mnuLecturer_Click);
+            // 
+            // mnuCourse
+            // 
+            this.mnuCourse.Name = "mnuCourse";
+            this.mnuCourse.Size = new System.Drawing.Size(152, 24);
+            this.mnuCourse.Text = "&Course";
             // 
             // MainPage
             // 
@@ -138,7 +149,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuStudent;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mnuLecturer;
+        private System.Windows.Forms.ToolStripMenuItem mnuCourse;
     }
 }
 
