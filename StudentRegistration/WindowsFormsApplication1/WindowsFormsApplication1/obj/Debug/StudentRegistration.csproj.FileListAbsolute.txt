@@ -13,4 +13,4 @@ D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\
 D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmStudent.resources
 D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmLecturer.resources
 D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCourse.resources
-D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Subjects.resources
+D:\DDOOCP\StudentRegistration\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmSubjects.resources
