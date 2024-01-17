@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.gbxSubjectDetailInformation = new System.Windows.Forms.GroupBox();
+            this.txtSubjectName = new System.Windows.Forms.TextBox();
+            this.txtTopics = new System.Windows.Forms.TextBox();
+            this.txtDuration = new System.Windows.Forms.TextBox();
+            this.cbxCourseName = new System.Windows.Forms.ComboBox();
             this.lblCourseName = new System.Windows.Forms.Label();
             this.lblSubjectName = new System.Windows.Forms.Label();
             this.lblDuration = new System.Windows.Forms.Label();
             this.lblTopics = new System.Windows.Forms.Label();
-            this.cbxCourseName = new System.Windows.Forms.ComboBox();
-            this.txtDuration = new System.Windows.Forms.TextBox();
-            this.txtTopics = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.txtSubjectName = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.gbxSubjectDetailInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,42 @@
             this.gbxSubjectDetailInformation.TabIndex = 0;
             this.gbxSubjectDetailInformation.TabStop = false;
             this.gbxSubjectDetailInformation.Text = "Subjects Detail Information";
+            // 
+            // txtSubjectName
+            // 
+            this.txtSubjectName.Location = new System.Drawing.Point(261, 130);
+            this.txtSubjectName.Name = "txtSubjectName";
+            this.txtSubjectName.Size = new System.Drawing.Size(205, 22);
+            this.txtSubjectName.TabIndex = 9;
+            // 
+            // txtTopics
+            // 
+            this.txtTopics.Location = new System.Drawing.Point(261, 282);
+            this.txtTopics.Name = "txtTopics";
+            this.txtTopics.Size = new System.Drawing.Size(205, 22);
+            this.txtTopics.TabIndex = 8;
+            // 
+            // txtDuration
+            // 
+            this.txtDuration.Location = new System.Drawing.Point(261, 198);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(205, 22);
+            this.txtDuration.TabIndex = 7;
+            // 
+            // cbxCourseName
+            // 
+            this.cbxCourseName.FormattingEnabled = true;
+            this.cbxCourseName.Items.AddRange(new object[] {
+            "L3DC",
+            "L4DC",
+            "L4DC BM",
+            "L5DC",
+            "L5DC BM",
+            "BSc (Hons) Computing Degree"});
+            this.cbxCourseName.Location = new System.Drawing.Point(261, 61);
+            this.cbxCourseName.Name = "cbxCourseName";
+            this.cbxCourseName.Size = new System.Drawing.Size(205, 24);
+            this.cbxCourseName.TabIndex = 5;
             // 
             // lblCourseName
             // 
@@ -98,35 +134,6 @@
             this.lblTopics.TabIndex = 4;
             this.lblTopics.Text = "Topics";
             // 
-            // cbxCourseName
-            // 
-            this.cbxCourseName.FormattingEnabled = true;
-            this.cbxCourseName.Items.AddRange(new object[] {
-            "L3DC",
-            "L4DC",
-            "L4DC BM",
-            "L5DC",
-            "L5DC BM",
-            "BSc (Hons) Computing Degree"});
-            this.cbxCourseName.Location = new System.Drawing.Point(261, 61);
-            this.cbxCourseName.Name = "cbxCourseName";
-            this.cbxCourseName.Size = new System.Drawing.Size(205, 24);
-            this.cbxCourseName.TabIndex = 5;
-            // 
-            // txtDuration
-            // 
-            this.txtDuration.Location = new System.Drawing.Point(261, 198);
-            this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(205, 22);
-            this.txtDuration.TabIndex = 7;
-            // 
-            // txtTopics
-            // 
-            this.txtTopics.Location = new System.Drawing.Point(261, 282);
-            this.txtTopics.Name = "txtTopics";
-            this.txtTopics.Size = new System.Drawing.Size(205, 22);
-            this.txtTopics.TabIndex = 8;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnClose);
@@ -138,14 +145,15 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
-            // btnClear
+            // btnClose
             // 
-            this.btnClear.Location = new System.Drawing.Point(35, 21);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(85, 52);
-            this.btnClear.TabIndex = 0;
-            this.btnClear.Text = "&Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(381, 21);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(85, 52);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "C&lose";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -155,22 +163,17 @@
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnClose
+            // btnClear
             // 
-            this.btnClose.Location = new System.Drawing.Point(381, 21);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(85, 52);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "C&lose";
-            this.btnClose.UseVisualStyleBackColor = true;
-            // 
-            // txtSubjectName
-            // 
-            this.txtSubjectName.Location = new System.Drawing.Point(261, 130);
-            this.txtSubjectName.Name = "txtSubjectName";
-            this.txtSubjectName.Size = new System.Drawing.Size(205, 22);
-            this.txtSubjectName.TabIndex = 9;
+            this.btnClear.Location = new System.Drawing.Point(35, 21);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(85, 52);
+            this.btnClear.TabIndex = 0;
+            this.btnClear.Text = "&Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // frmSubjects
             // 

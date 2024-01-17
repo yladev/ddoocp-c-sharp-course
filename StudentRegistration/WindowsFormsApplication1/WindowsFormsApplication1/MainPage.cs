@@ -33,5 +33,17 @@ namespace WindowsFormsApplication1
             frmLecturer l = new frmLecturer();
             l.Show();
         }
+
+        private void subjectsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSubjects sub = new frmSubjects();
+            sub.Show();
+        }
+
+        private void mnuCourse_Click(object sender, EventArgs e)
+        {
+            frmCourse c = new frmCourse();
+            c.Show();
+        }
     }
 }

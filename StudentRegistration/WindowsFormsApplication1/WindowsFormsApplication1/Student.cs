@@ -55,7 +55,17 @@ namespace WindowsFormsApplication1
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-             if (txtStudentID.Text == "")
+            clsStudents s = new clsStudents();
+            s.Student_ID(txtStudentID.Text);
+            s.Student_Name(txtStudentName.Text);
+            s.Student_NRC(txtNRC.Text);
+            s.Student_Quali(txtQuali.Text);
+            s.Student_EmailAddress(txtEmailAddress.Text);
+            s.Student_PhoneNumber(txtPhoneNumber.Text);
+            s.Student_Address(txtAddress.Text);
+
+
+            if (txtStudentID.Text == "")
             {
                 MessageBox.Show("Please enter StudentID: ", "Student Form", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 txtStudentID.Focus();

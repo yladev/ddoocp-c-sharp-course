@@ -24,6 +24,12 @@ namespace WindowsFormsApplication1
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            clsCourse c = new clsCourse();
+            c.Course_ID(txtCourseID.Text);
+            c.Course_Name(txtCourseName.Text);
+            c.Course_Fees(txtFees.Text);
+            c.Course_Duration(txtDuration.Text);
+
             if (txtCourseID.Text == "")
             {
                 MessageBox.Show("Please enter your CourseID: ", "Course Regisrer", MessageBoxButtons.OK, MessageBoxIcon.Error);

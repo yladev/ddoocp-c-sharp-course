@@ -36,7 +36,6 @@
             this.grbGender = new System.Windows.Forms.GroupBox();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
             this.rdoMale = new System.Windows.Forms.RadioButton();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtLecturerName = new System.Windows.Forms.TextBox();
@@ -51,6 +50,7 @@
             this.lblLD = new System.Windows.Forms.Label();
             this.txtLD = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.grbLecturerInformation.SuspendLayout();
             this.grbGender.SuspendLayout();
             this.grbEditLecturer.SuspendLayout();
@@ -58,12 +58,12 @@
             // 
             // grbLecturerInformation
             // 
+            this.grbLecturerInformation.Controls.Add(this.btnClose);
             this.grbLecturerInformation.Controls.Add(this.txtPhoneNumber);
             this.grbLecturerInformation.Controls.Add(this.txtEmailAddress);
             this.grbLecturerInformation.Controls.Add(this.label6);
             this.grbLecturerInformation.Controls.Add(this.label4);
             this.grbLecturerInformation.Controls.Add(this.grbGender);
-            this.grbLecturerInformation.Controls.Add(this.btnCancel);
             this.grbLecturerInformation.Controls.Add(this.btnUpdate);
             this.grbLecturerInformation.Controls.Add(this.btnSave);
             this.grbLecturerInformation.Controls.Add(this.txtLecturerName);
@@ -145,16 +145,6 @@
             this.rdoMale.TabStop = true;
             this.rdoMale.Text = "Male";
             this.rdoMale.UseVisualStyleBackColor = true;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(315, 464);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(86, 58);
-            this.btnCancel.TabIndex = 12;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnUpdate
             // 
@@ -283,6 +273,16 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(315, 464);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(86, 58);
+            this.btnClose.TabIndex = 18;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmLecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,7 +311,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbxPosition;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtLecturerName;
@@ -328,5 +327,6 @@
         private System.Windows.Forms.Label lblLD;
         private System.Windows.Forms.TextBox txtLD;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnClose;
     }
 }
